@@ -1,0 +1,472 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: Poppins;
+      }
+      header {
+        background-color: rgba(183, 76, 76, 0.42);
+        height: 216px;
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      #page_title {
+        font-family: Pattaya;
+        margin-left: 100px;
+        font-size: 48px;
+        color: black;
+        z-index: 1;
+        align-self: center;
+      }
+      ul#main_menu {
+        align-self: center;
+      }
+      ul#main_menu li {
+        float:right;
+        color: white;
+        list-style: none;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        margin-right: 97px;
+      }
+      #about_me {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 878px;
+        background-color: rgba(176, 85, 85, 0.63);
+      }
+      #avatar {
+        margin-top: 103px;
+        margin-left: 173px;
+        width: 672px;
+        height: 644px;
+        border-radius: 322px;
+        background-image: url("images/aboutme.jpg");
+        background-position: center;
+      }
+      .about_me {        
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px; 
+        margin-top: 165px;       
+      }
+      #about_me {
+        color: white;
+        text-align: center;
+      }
+      #about_me .detail {
+        margin-top: 56px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 59px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      #about_me .letschat {
+        border: solid;
+        width: 464px;
+        height: 86px;
+        margin: auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color: rgba(255, 255, 255, 0.49);
+        color: black;
+        border-radius: 9px;
+      }
+      #service1 {
+        width: 1520px;
+        height: 609px;
+        margin-top: 123px;
+        margin-left: 100px;
+        display: flex;
+      }
+      #service1 .border {        
+        background-color: rgba(183, 76, 76, 0.35);
+        width: 664px;
+        height: 609px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      #service1 .image {
+        background-image: url('images/service1.jpg');
+        background-position: center;
+        width: 551px;
+        height: 505px;
+        margin: 52px 56px 52px 57px;
+      }
+      #service1 .package {
+        margin-left: 83px;
+      }
+      #service1 .package .title {
+        margin-top: 165px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height:74px;
+        height: 74px;
+      }
+      #service1 .package .title .text {
+        letter-spacing: 5px;
+        
+      }
+      #service1 .package .title .button {
+        margin-left: 113px;
+        margin-right: 27px;
+        background-color: rgba(192, 105, 77, 0.47);
+        color: white;
+        width: 203px;
+        height: 74px;
+        text-align:center;        
+        float: right;
+      }
+      #service1 .package .description {
+        margin-top: 46px;
+        font-weight: 400px;
+        line-height: 27px;
+        font-size: 18px;
+      }
+
+      #service2 {
+        margin-top: 48px;
+        width: 1503px;
+        height: 609px;
+        margin-top: 123px;
+        margin-left: 100px;
+        display: flex;
+      }
+
+      #service2 .border {        
+        background-color: rgba(183, 76, 76, 0.35);
+        width: 664px;
+        height: 609px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      #service2 .image {
+        background-image: url('images/service2.jpg');
+        background-position: center;
+        width: 551px;
+        height: 505px;
+        margin: 52px 56px 52px 57px;
+      }
+      #service2 .package {
+        margin-right: 66px;
+      }
+      #service2 .package .title {
+        margin-top: 165px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height:74px;
+        height: 74px;
+      }
+      #service2 .package .title .text {
+        letter-spacing: 5px;
+        
+      }
+      #service2 .package .title .button {
+        margin-left: 113px;
+        margin-right: 27px;
+        background-color: rgba(192, 105, 77, 0.47);
+        color: white;
+        width: 203px;
+        height: 74px;
+        text-align:center;        
+        float: right;
+      }
+      #service2 .package .description {
+        margin-top: 46px;
+        font-weight: 400px;
+        line-height: 27px;
+        font-size: 18px;
+      }
+
+      #service3 {
+        width: 1534px;
+        height: 609px;
+        margin-top: 123px;
+        margin-left: 100px;
+        display: flex;
+      }
+      #service3 .border {        
+        background-color: rgba(183, 76, 76, 0.35);
+        width: 664px;
+        height: 609px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      #service3 .image {
+        background-image: url('images/service3.jpg');
+        background-position: center;
+        width: 551px;
+        height: 505px;
+        margin: 52px 56px 52px 57px;
+      }
+      #service3 .package {
+        margin-left: 83px;
+      }
+      #service3 .package .title {
+        margin-top: 165px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height:74px;
+        height: 74px;
+      }
+      #service3 .package .title .text {
+        letter-spacing: 5px;
+      }
+      #service3 .package .title .button {
+        margin-left: 113px;
+        margin-right: 27px;
+        background-color: rgba(192, 105, 77, 0.47);
+        color: white;
+        width: 203px;
+        height: 74px;
+        text-align:center;        
+        float: right;
+      }
+      #service3 .package .description {
+        margin-top: 46px;
+        font-weight: 400px;
+        line-height: 27px;
+        font-size: 18px;
+      }
+      #services {
+        background-color: rgba(183, 76, 76, 0.35);
+        margin-top: 157px;
+        height: 775px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+      }
+      #services .package {
+        height: 597px;
+        background-color: white;
+      }
+      #services .left {
+        margin-left: 10%;
+        margin-right: 5%;
+      }
+
+      #services .right {
+        margin-right: 10%;
+      }
+      
+      #services .package .title {
+        margin-top: 97px;
+        margin-left: 152px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height:74px;
+        height: 74px;
+        letter-spacing: 5px;
+      }
+      #services .package .description {
+        margin-top: 47px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 152px;
+        margin-right: 170px;
+      }
+      #services .package .button {
+        margin-left: 152px;
+        margin-top: 81px;
+        width: 374px;
+        height: 97px;
+        background-color: rgba(192, 105, 77, 0.47);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      #testimonials {
+        height: 685px;
+        opacity : 0.76;
+        background-image: url('images/testimonial.jpg');
+        background-position: center;
+      }
+      #testimonials .title{
+        text-align: center;
+        padding-top: 214px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+      }
+      #testimonials .description{
+        text-align: center;
+        margin-top: 80px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 5px;
+        margin-left: 8%;
+        margin-right: 8%;
+      }
+      #follow_me {
+        height: 621px;
+      }
+      #follow_me .top {
+        background-color: rgba(183, 76, 76, 0.35);
+        height: 398px;
+        text-align: center;
+        padding-top: 76px;
+        font-weight: 700;
+        font-size: 36;
+        line-height: 54px;
+        color: white;
+        letter-spacing: 10px;
+      }
+      #follow_me .images {
+        position: relative;
+      }
+      #follow_me .images img {
+        width: 223px;
+        position: absolute;
+      }
+      #follow_me .images .image1 {        
+        left: 7%;
+      }
+      #follow_me .images .image2 {
+        top: 143px;
+        left: 25%;
+      }
+      #follow_me .images .image3 {
+        top: 181px;
+        position: relative;
+        margin: auto;
+      }
+      #follow_me .images .image4 {
+        right: 25%;
+        top: 81px;
+      }
+      #follow_me .images .image5 {
+        top: -11px;
+        right: 7%;
+      }
+      footer {
+        padding-top:72px;height:102px;
+      }
+      footer .icons {
+        margin-left:auto;
+        margin-right:auto;
+        width:190px;
+        height:30px;
+        text-align: center;
+        font-size: 30px;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span id="page_title">Uamesa Ramanay</span>
+      <ul id="main_menu">
+        <li><i class="material-icons">search</i></li>
+        <li>Contact</li>
+        <li>Service</li>
+        <li>About</li>
+        <li>Home</li>
+      </ul>
+    </header>
+    <div id="about_me">
+      <div id="avatar">
+      </div>
+      <div>
+        <div class="about_me">ABOUT ME</div>
+        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.</div>
+        <div class="letschat">Let's Chat</div>
+        <div></div>
+      </div>
+    </div>
+    <div id="service1">
+      <div class="border">
+        <div class="image"></div>
+      </div>
+      <div class="package">
+        <div class="title">
+          <span class="text">service package</span>
+          <div class="button">View</div>
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.
+        </div>
+      </div>
+    </div>
+    <div id="service2"> 
+      <div class="package">
+        <div class="title">
+          <span class="text">service package</span>
+          <div class="button">View</div>
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.
+        </div>
+      </div>
+      <div class="border">
+        <div class="image"></div>
+      </div>
+    </div>
+    <div id="service3">
+      <div class="border">
+        <div class="image"></div>
+      </div>
+      <div class="package">
+        <div class="title">
+          <span class="text">service package</span>
+          <div class="button">View</div>
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="package left">
+        <div class="title">service package</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet adipiscing bibendum velit bibendum.</div>
+        <div class="button">contact me</div>
+      </div>
+      <div class="package right">
+        <div class="title">service package</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet adipiscing bibendum velit bibendum.</div>
+        <div class="button">contact me</div>
+      </div>
+    </div>
+    <div id="testimonials">
+      <div class="title">WHAT MY CLIENT ARE SAYING</div>
+      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  my contact    odio eget sollicitudin tincidunt eget  vulputate. Odio molestie ac tortor pellentesque elit congue. Sapien blandit nunc dictum praesent vel auctor. Tempus, quis aliquet tortor aliquet sit at at.</div>
+    </div>
+    <div id="follow_me">
+      <div class="top">
+        <div>Follow me @BELLAADNDRV</div>
+        <div class="images">
+          <img src="images/image1.jpg" class="image1">
+          <img src="images/image2.jpg" class="image2">
+          <img src="images/image3.jpg" class="image3">
+          <img src="images/image4.jpg" class="image4">
+          <img src="images/image5.jpg" class="image5">
+        </div>
+      </div>
+      
+    </div>
+    <footer>
+      <div class="icons">
+        <i class="fa fa-google"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </footer>
+  </body>
+</html>
